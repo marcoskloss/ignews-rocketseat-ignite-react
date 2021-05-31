@@ -1,10 +1,9 @@
 import Head from 'next/head';
 import { GetStaticProps } from 'next';
 
-import styles from './home.module.scss';
+import styles from '../styles/pages/home.module.scss';
 import { stripe } from '../services/stripe';
 import { SubscribeButton } from '../components/SubscribeButton';
-import { useEffect } from 'react';
 
 interface IHomeProps {
   product: {
